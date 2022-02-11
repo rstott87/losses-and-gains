@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import LossForm from './LossForm';
+import { useState } from 'react';
 
 function App() {
+  const [loss, setLoss] = useState (50);
+  const handleChange=(e)=>{
+    setLoss(e.target.value)
+  }
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+      <div className="item">TIME IN THE MARKET</div>
+      <LossForm loss={loss} handleChange={handleChange}/>
     </div>
   );
 }

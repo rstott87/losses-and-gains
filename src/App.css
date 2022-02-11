@@ -1,11 +1,10 @@
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,7 +12,7 @@
   }
 }
 
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -28,11 +27,22 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item {
+  margin: 6px;
+  color: #61dafb;
+  width: 20%;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+}
+
+.number {
+  color: red;
+}
+
+.numberGains {
+  color:rgb(0, 225, 255)
+}
+
+.gainsContainer {
+  margin-top: 80px;
 }
